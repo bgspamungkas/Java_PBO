@@ -12,30 +12,34 @@ package bangundatar;
 public class BangunDatarMain {
    public static void main(String[] args) {
         PersegiPanjang PP;
-       PP = new PersegiPanjang();
+        PP = new PersegiPanjang();
         PP.panjang = 25;
         PP.lebar = 38;
         PP.hitungLuas();
         PP.hitungKeliling();
         
-        Persegi A = new Persegi();
-        A.sisi = 10;
-        A.hitungLuas();
-        A.hitungKeliling();
+        Persegi PA;
+        PA = new Persegi();
+        PA.sisi = 10;
+        PA.hitungLuas();
+        PA.hitungKeliling();
         
-        Persegi B = new Persegi();
-        B.sisi = 15;
-        B.hitungLuas();
-        B.hitungKeliling();
+        Persegi PB; 
+        PB = new Persegi();
+        PB.sisi = 15;
+        PB.hitungLuas();
+        PB.hitungKeliling();
         
-        Lingkaran X = new Lingkaran();
-        X.r = 25;
-        X.hitungLuas();
-        X.hitungKeliling();
+        Lingkaran LX; 
+        LX = new Lingkaran();
+        LX.r = 25;
+        LX.hitungLuas();
+        LX.hitungKeliling();
         
-        Lingkaran Z = new Lingkaran();
-        Z.r = 37;
-        Z.hitungLuas();
-        Z.hitungKeliling();
+        Lingkaran LZ;
+        LZ = new Lingkaran();
+        LZ.r = 37;
+        LZ.hitungLuas();
+        LZ.hitungKeliling();
     } 
 }

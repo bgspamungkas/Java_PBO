@@ -16,6 +16,8 @@ public class MyNewClass {
         op1.bilKedua = 60;
         op1.hitungPenjumlahan();
         op1.hitungPengurangan();
+        op1.hitungPerkalian();
+        op1.hitungPembagian();
     }
 
 }
