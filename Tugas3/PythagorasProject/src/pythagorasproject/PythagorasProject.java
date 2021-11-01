@@ -5,9 +5,10 @@
  */
 package pythagorasproject;
 import java.util.Scanner;
+
 /**
  *
- * @author lanja
+ * @author Gamaliel Agung
  */
 public class PythagorasProject {
 
@@ -15,8 +16,8 @@ public class PythagorasProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
         // TODO code application logic here
+    // TODO code application logic here
         System.out.println("                ___     ");
         System.out.println("       [c] ____|   |    ");
         System.out.println("       ___|        |    ");
@@ -37,7 +38,7 @@ public class PythagorasProject {
         
         switch(pilihan.nextInt()){
             case 1 :
-                Triple t = new Triple();
+                triple t = new triple();
                 t.input();
                 t.cek();
                 break;
@@ -47,7 +48,7 @@ public class PythagorasProject {
                 c.sisiMiring();
                 break;
             case 3 :
-                sikuSiku siku = new sikuSiku();
+                Siku_siku siku = new Siku_siku();
                 siku.input();
                 siku.sisiSiku();
                 break;
@@ -67,4 +68,3 @@ public class PythagorasProject {
         
         
 }
-    

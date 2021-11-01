@@ -4,22 +4,25 @@
  * and open the template in the editor.
  */
 package gametebakangkaproject;
+
 import java.util.Scanner;
+
 /**
  *
- * @author lanja
+ * @author Gamaliel Agung
  */
 public class GameTebakAngkaProject {
 
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         int tebak;
         
         
-        bilRandom rn = new bilRandom();
+        Random rn = new Random();
         int random = rn.generate();
 //        System.out.println(random);
         
@@ -33,18 +36,17 @@ public class GameTebakAngkaProject {
             tebak = masukan.nextInt();
             
             if(tebak < random){
-                System.out.println("Hehehe… Bilangan tebakan anda terlalu kecil");
+                System.out.println("Hehehe… Anda kurang beruntung bilangan tebakan anda terlalu kecil");
                 
             } else if(tebak > random){
-                System.out.println("Hehehe… Bilangan tebakan anda terlalu besar");
+                System.out.println("Hehehe… Anda kurang beruntung bilangan tebakan anda terlalu besar");
                 
             } else {
-                System.out.println("Yeeee… Bilangan tebakan anda BENAR :-)");
+                System.out.println("Yeeeeahh… Thats true boyss bilangan tebakan anda BENAR :-)");
                 break;
             }
         } while (tebak != random);
         
     }
-    
     
 }

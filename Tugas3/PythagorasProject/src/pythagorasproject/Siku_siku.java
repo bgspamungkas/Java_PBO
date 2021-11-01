@@ -11,16 +11,15 @@ import java.util.Scanner;
  *
  * @author Gamaliel Agung
  */
-public class Miring {
+public class Siku_siku {
     int a;
-    int b;
-    double c = 0;
+    int c;
+    double b = 0;
     
     void input(){
         
         System.out.println("");
-        System.out.println("Menentukan sisi miring segitiga");
-        
+        System.out.println("Menentukan sisi siku-siku segitiga");
         
         Scanner data = new Scanner(System.in);
         
@@ -29,15 +28,15 @@ public class Miring {
             a = data.nextInt();
            
             
-            System.out.println("Masukan sisi [b] : ");
-            b = data.nextInt();
+            System.out.println("Masukan sisi miring [c] : ");
+            c = data.nextInt();
             break;
             
         }
     }
     
-    void sisiMiring(){
-        this.c = Math.sqrt(Math.pow(a, 2) + (Math.pow(b, 2)));
-        System.out.println("Sisi miringnya [c] adalah : " + c);
+    void sisiSiku(){
+        this.b = Math.sqrt(Math.pow(c, 2) - (Math.pow(a, 2)));
+        System.out.println("Sisi siku-siku adalah : " + b);
     }
 }
