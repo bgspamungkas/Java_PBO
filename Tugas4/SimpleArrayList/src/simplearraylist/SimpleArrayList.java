@@ -5,6 +5,8 @@
  */
 package simplearraylist;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Gamaliel Agung
@@ -16,6 +18,37 @@ public class SimpleArrayList {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    Sistem a = new Sistem();
+        while(true){
+            int inp;
+            System.out.println("---- Program Array ----");
+            System.out.println("1.Tambah data");
+            System.out.println("2.Cari Data");
+            System.out.println("3.Hapus Data");
+            System.out.println("4.Tampil Data");
+            System.out.println("5.Exit");
+            
+            Scanner input = new Scanner(System.in);
+            System.out.println("");
+            System.out.println("Pilih Program = ");
+            inp = input.nextInt();
+
+            switch (inp) {
+                case 1:
+                    a.tambahdata();
+                    break;
+                case 2:
+                    a.caridata();
+                    break;
+                case 3:
+                    a.hapusdata();
+                    break;
+                case 4:
+                    a.tampildata();
+                    break;
+                case 5:
+                    System.exit(0);
+            }
+        }
     }
-    
 }
