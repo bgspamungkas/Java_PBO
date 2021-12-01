@@ -12,14 +12,27 @@ package rental_ps_revisi;
 public class silvermember extends  datamember{
     
     // atribut
-    protected int rentCost, point, disc, tempCost, discountAmount, totalCost;
+    private int rentCost, point, disc, tempCost, discountAmount, totalCost;
     
+    // setter method
+    
+    public void setRentCost(int rc) {
+        this.rentCost = rc;
+    }
+    
+    public void setPoint(int p) {
+        this.point = p;
+    }
+    
+    public void setDisc(int d) {
+        this.disc = d;
+    }
     
     // constructor
     silvermember() {
-        this.rentCost = 25000;
-        this.point = 1;
-        this.disc = 1;
+        setRentCost(25000);
+        setPoint(1);
+        setDisc(1);
     }
     
     protected int costAmount(int rentalDuration) {

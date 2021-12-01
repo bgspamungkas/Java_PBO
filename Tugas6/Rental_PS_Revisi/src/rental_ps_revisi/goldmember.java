@@ -11,13 +11,25 @@ package rental_ps_revisi;
  */
 public class goldmember extends silvermember {
     
-    int cashback;
+    private int cashback;
     
+    // setter method
+    public void setCashback(int cb) {
+        this.cashback = cb;
+    }
+    
+    //getter method
+    public int getCashback() {
+        return this.cashback;
+    }
+    
+    
+    // constructor
     goldmember() {
-        rentCost = 30000;
-        point = 5;
-        disc = 2;
-        cashback = 5000;
+        setRentCost(30000);
+        setPoint(5);
+        setDisc(2);
+        setCashback(5000);
     }
 }
 

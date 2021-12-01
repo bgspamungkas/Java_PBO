@@ -11,18 +11,19 @@ package rental_ps_revisi;
  */
 public class platinummember extends goldmember{
     
-    int bonus;
+    private int bonus;
     
     platinummember() {
-        rentCost = 45000;
-        point = 10;
-        disc = 3;
-        cashback = 10000;
+        setRentCost(45000);
+        setPoint(10);
+        setDisc(3);
+        setCashback(10000);
     }
     
-    protected int getBonus(int rentalDuration) {
+    //getter method
+    public int getBonus(int rentalDuration) {
         
-        bonus = rentalDuration * 5000;
+        this.bonus = rentalDuration * 5000;
         return bonus;
     }
 }
